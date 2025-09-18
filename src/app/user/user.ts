@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 
 import { DUMMY_USERS } from '../dummy-users';
 
@@ -18,6 +18,7 @@ export class User {
   }
 
   onSelectUser() {
-    console.log('Clicked!');
+    const randomIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+    this.selectedUser = DUMMY_USERS[randomIndex];
   }
 }
