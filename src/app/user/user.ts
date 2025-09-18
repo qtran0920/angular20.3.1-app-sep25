@@ -18,6 +18,6 @@ export class User {
   }
 
   onSelectUser() {
-    console.log('Clicked!')
+    console.log('Clicked!');
   }
 }
