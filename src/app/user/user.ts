@@ -7,8 +7,8 @@ import { Component, Input } from '@angular/core';
   styleUrl: './user.css'
 })
 export class User {
-  @Input() avatar!: string; // ! is to inform ts that value is to be assigned
-  @Input() name!: string;
+  @Input({required: true}) avatar!: string; // ! is to inform ts that value is to be assigned
+  @Input({required: true}) name!: string;
 
   get imagePath() {
     return 'assets/users/' + this.avatar;
