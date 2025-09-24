@@ -10,7 +10,7 @@ export class User {
   @Input({required: true}) id!: string;
   @Input({required: true}) avatar!: string; // ! is to inform ts that value is to be assigned
   @Input({required: true}) name!: string;
-  @Output() select = new EventEmitter();
+  @Output() select = new EventEmitter<string>();
   //select = output<string>();
 
   get imagePath() {
