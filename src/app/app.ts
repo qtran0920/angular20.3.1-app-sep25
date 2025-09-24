@@ -16,4 +16,8 @@ export class App {
   protected readonly title = signal('angular20.3.1-sept25');
 
   users = DUMMY_USERS;
+
+  onSelectUser(id: string) {
+    console.log('Seelcted user with id ' + id);
+  }
 }
