@@ -3,10 +3,10 @@ import { Component, Input, Output, EventEmitter, output } from '@angular/core';
 @Component({
   selector: 'app-user',
   imports: [],
-  templateUrl: './user.html',
-  styleUrl: './user.css'
+  templateUrl: './user.component.html',
+  styleUrl: './user.component.css'
 })
-export class User {
+export class UserComponent {
   @Input({required: true}) id!: string;
   @Input({required: true}) avatar!: string; // ! is to inform ts that value is to be assigned
   @Input({required: true}) name!: string;
