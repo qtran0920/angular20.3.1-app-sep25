@@ -17,7 +17,7 @@ export class App {
   protected readonly title = signal('angular20.3.1-sept25');
 
   users = DUMMY_USERS;
-  selectedUserId = 'u1';
+  selectedUserId?: string;
 
   onSelectUser(id: string) {
     this.selectedUserId = id;
