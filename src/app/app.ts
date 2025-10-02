@@ -14,7 +14,7 @@ import { DUMMY_USERS } from './dummy-users';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('angular20.3.1-sept25');
+  protected readonly title = signal('angular20.3.1-app-sept25');
 
   users = DUMMY_USERS;
   selectedUserId?: string;
